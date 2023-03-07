@@ -91,7 +91,7 @@ SEMCOR='\e[0m'
   -az)cor="${COLOR[4]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${COLOR[0]}${SEMCOR}" && echo -e "${cor}${2}${SEMCOR}";;
   "-bar2"|"-bar")cor="\e[1;30m————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
-  -tit)echo -e "\e[91m╔─━━━━━━━━━━━━━━━━━━━━━░★░━━━━━━━━━━━━━━━━━━━━━━─╗   \e[0m\n \e[2;97m\e[3;93m     𝙎𝘾𝙍𝙄𝙋𝙏 𝙀𝙇𝙀𝙈𝙀𝙉𝙏𝙊 𝘿𝘼𝙍𝙆 𝙑𝙋𝙎     \033[0m \033[1;31m[\033[1;32m$vesaoSCT\n\e[91m╚─━━━━━━━━━━━━━━━━━━━━━░★░━━━━━━━━━━━━━━━━━━━━━━─╝   \e[0m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  -tit)echo -e "\e[91m╔─━━━━━━━━━━━━━━━━━━━━━░★░━━━━━━━━━━━━━━━━━━━━━━─╗   \e[0m\n \e[2;97m\e[3;93m     𝗦𝗖𝗥𝗜𝗣𝗧 𝗟𝗔𝗧𝗠𝗫     \033[0m \033[1;31m[\033[1;32m$vesaoSCT\n\e[91m╚─━━━━━━━━━━━━━━━━━━━━━░★░━━━━━━━━━━━━━━━━━━━━━━─╝   \e[0m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
   -bar3) $([[ ! -e $(echo -e $(echo "2F7573722F6C6F63616C2F6C69622F726D"| sed 's/../\\x&/g;s/$/ /')) ]] && $( > /dev/null 2>&1)) && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
@@ -119,7 +119,7 @@ rm -rf /etc/VPS-MX/menu
  
  clear; clear
  userid="${SCPdir}/ID"
- 		 TOKEN="2012880601:AAEJ3Kk18PGDzW57LpTMnVMn_pQYQKW3V9w"
+ 		 TOKEN="5942142037:AAEqpDGAna-lYcNwh1VHBqYgx4YhSeZFZS0"
 			URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 			MSG="👇= 📵IP BANEADO📵 =👇    
  ══════◄••••►══════
@@ -198,7 +198,7 @@ function_verify () {
   exit 1
   } || {
   ### INTALAR VERSION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/lacasitamx/version/master/vercion")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/cisdan/latam/main/vercion")
   echo "$v1" > /etc/versin_script
   echo "$v1" > /etc/versin_script_new
   }
@@ -631,7 +631,7 @@ clear
 msg -tit
 msg -ama "          ¿ DESEA DESINSTALAR SCRIPT ?"
 msg -bar
-echo -e " Esto borrara todos los archivos del scrip VPS_MX"
+echo -e " Esto borrara todos los archivos del scrip LATMX"
 msg -bar
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p " [S/N]: " yesno
@@ -891,7 +891,7 @@ clear
 clear
 msg -tit
 
-msg -ama " Notify-BOT (Notificacion Remota)|@DARK_MOD_Noty_Bot "
+msg -ama " Notify-BOT (Notificacion Remota)|@Noty_Bot_LATMX "
 msg -bar
 echo -e "\033[1;94m Notify-BOT es un simple notificador de:"
 echo -e "\033[1;94m >> Usuario Expirado"
@@ -899,7 +899,7 @@ echo -e "\033[1;94m >> Usuario Eliminado"
 echo -e "\033[1;94m >> Avisos de VPS Reiniciada"
 echo -e "\033[1;94m >> Avisos de Monitor de Protocolos"
 echo -e "\033[1;97m Inicie El BOT de Telegram"
-echo -e "\033[1;92m ¡¡ Para sacar su ID entre al BOT @DARK_MOD_Noty_Bot"
+echo -e "\033[1;92m ¡¡ Para sacar su ID entre al BOT @DNoty_Bot_LATMX"
 echo -e "\033[1;92m Aparesera algo parecido 👤 → Tu ID es: 45145564   "
 msg -bar
 echo -e "\033[1;93mIgrese un nombre para la VPS:\033[0;37m"; read -p " " nombr
@@ -916,7 +916,7 @@ NOM="$(less /etc/VPS-MX/controlador/nombre.log)"
 NOM1="$(echo $NOM)"
 IDB1=`less /etc/VPS-MX/controlador/IDT.log` > /dev/null 2>&1
 IDB2=`echo $IDB1` > /dev/null 2>&1
-KEY="5935180805:AAHd0N9ube02JlsUrKWSVChOVsZGBtabSrw"
+KEY="5942142037:AAEqpDGAna-lYcNwh1VHBqYgx4YhSeZFZS0"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 MSG="⚠️ ►► AVISO DE VPS: $NOM1 ⚠
 👉 ►► IP: $Nip
@@ -1694,7 +1694,7 @@ read -t 10 -n 1 -rsp $'\033[1;39m Preciona Enter Para continuar\n'
 clear
 sudo htop
 msg -bar
-echo -e "\e[97m \033[1;41m| #-#-►  SCRIPT VPS•MX ◄-#-# | \033[1;49m\033[1;49m \033[1;31m[ \033[1;32m $vesaoSCT      "
+echo -e "\e[97m \033[1;41m| #-#-►  SCRIPT LATMX ◄-#-# | \033[1;49m\033[1;49m \033[1;31m[ \033[1;32m $vesaoSCT      "
 echo -ne " \033[1;93m             MONITOR DE PROCESOS HTOP\n"
 msg -bar
 echo -e "\e[97m                  FIN DEL MONITOR"
