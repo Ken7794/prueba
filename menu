@@ -46,7 +46,7 @@ msg () {
 v11=$(cat /etc/versin_script_new) 
 v22=$(cat /etc/versin_script)
 #[[ $v11 = $22 ]] && 
-vesaoSCT="\033[1;37mVersion \033[1;32m2.0\033[1;31m]" #|| vesaoSCT="\033[1;32mUPDATE\033[1;91m[\033[1;32m$v11\033[1;31m]" 
+vesaoSCT="\033[1;37mVersion \033[1;32mx9\033[1;31m]" #|| vesaoSCT="\033[1;32mUPDATE\033[1;91m[\033[1;32m$v11\033[1;31m]" 
 aviso_bock () {
 echo 'echo -e "\033[1;91m————————————————————————————————————————————————————\n       ¡SCRIPT BLOQUEADO POR CLONING|| CONTACTE CON SU PROVEDOR ! \n————————————————————————————————————————————————————"' > /usr/bin/menu
 echo 'echo -e "\033[1;91m————————————————————————————————————————————————————\n       ¡SCRIPT BLOQUEADO POR CLONING|| CONTACTE CON SU PROVEDOR ! \n————————————————————————————————————————————————————"' > /usr/bin/VPS-MX
