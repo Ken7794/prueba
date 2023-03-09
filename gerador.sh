@@ -294,7 +294,7 @@ meu_ip() {
 
 mudar_instacao() {
     while [[ ${var[$value]} != 0 ]]; do
-        [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas menu_inst PPub.py usercodes payloads PDirect.py v-local.log PGet.py ultrahost menu POpen.py shadowsocks.sh fai2ban PPriv.py"
+        [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh C-SSR.sh Crear-Demo.sh ID.txt PDirect.py PGet.py POpen.py PPriv.py PPub.py apacheon.sh blockBT.sh budp.sh dns-netflix.sh dropbear.sh fai2ban.sh menu message.txt openvpn.sh paysnd.sh ports.sh python.py shadowsocks.sh slowdns.sh sockspy.sh speed.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes v2ray.sh"
         clear
         echo -e $BARRA
         echo -e "MENU SSELECCI�N DE INSTALACI�N"
