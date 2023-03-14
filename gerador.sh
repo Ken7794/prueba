@@ -579,7 +579,7 @@ echo  #' >/bin/genon
             service cron restart
 
         }
-        genon
+        #genon
     else
         killall http-server.sh
     fi
