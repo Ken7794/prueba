@@ -5,7 +5,7 @@ checkPID_GEN=$(ps x|grep -v grep|grep "8888")
 [[ -e /etc/systemd/system/btkill.service ]] && kkid="✅" || kkid="❌"
 
 menu_src () {
-#namcli=$(bash /etc/ADM-db/BotGen.sh | grep  message_from_first_name | grep message_from_first_name | grep -i message_from_first_name | awk {'print $4'})
+namcli=$(bash /etc/ADM-db/BotGen.sh | grep  message_from_first_name | grep message_from_first_name | grep -i message_from_first_name | awk {'print $4'})
 #${message_text[$usuario]}  $message_from_first_name $message_from_last_name
 [[ -z ${callback_query_from_username} ]] && nUSER=${message_from_username} || nUSER=${callback_query_from_username}
 bot_retorno="  ✨ BIENVENIDO A ADMcgh/ChumoGH $(cat < /etc/SCRIPT/v-local.log) ✨\n"
