@@ -565,7 +565,7 @@ start_gen() {
             echo '#!/bin/bash
 killall http-server.sh
 screen -dmS generador /bin/http-server.sh -start
-echo  #' >/bin/genon
+echo  ' >/bin/genon
             chmod +rwx /bin/genon
             echo "00 * * * * root bash /bin/genon" >>/etc/crontab
             service cron restart
@@ -579,7 +579,7 @@ echo  #' >/bin/genon
             service cron restart
 
         }
-        #genon
+        genon
     else
         killall http-server.sh
     fi
