@@ -50,7 +50,7 @@ reply () {
 									--parse_mode html \
 									--reply_markup "$(ShellBot.ForceReply)"
 	[[ "${callback_query_data}" = /del || "${message_text}" = /del ]] && listID_src
-	[[ "${callback_query_data}" = /img || "${message_text}" = /img ]] && listID_src
+	#[[ "${callback_query_data}" = /img || "${message_text}" = /img ]] && listID_src
 	[[ "${callback_query_data}" = '/banIP' || "${message_text}" = '/banIP' ]] && list_IP
 	
 }
@@ -197,15 +197,15 @@ msj_del () {
 }
 
 msj_img () {
-${timg}/id_${usrLOP}.png
-local file_id
-          ShellBot.getFile --file_id "$1"
-          ShellBot.downloadFile --file_path "${return[file_path]}" --dir "${timg}/id_${usrLOP}.png"
-		  [[ -e ${return[file_path]} ]] && mv ${return[file_path]} "${timg}/id_${usrLOP}.png1"
+#${timg}/id_${usrLOP}.png
+#local file_id
+          #ShellBot.getFile --file_id "$1"
+          #ShellBot.downloadFile --file_path "${return[file_path]}" --dir "${timg}/id_${usrLOP}.png"
+		  #[[ -e ${return[file_path]} ]] && mv ${return[file_path]} "${timg}/id_${usrLOP}.png1"
 
-	[[ ! -z ${callback_query_message_chat_id[$id]} ]] && var=${callback_query_message_chat_id[$id]} || var=${message_chat_id[$id]}
-		       ShellBot.sendPhoto --chat_id $var --photo @${timg}/id_${usrLOP}.png
-			  ShellBot.deleteMessage --chat_id $var --message_id $1
+	#[[ ! -z ${callback_query_message_chat_id[$id]} ]] && var=${callback_query_message_chat_id[$id]} || var=${message_chat_id[$id]}
+		       #ShellBot.sendPhoto --chat_id $var --photo @${timg}/id_${usrLOP}.png
+			  #ShellBot.deleteMessage --chat_id $var --message_id $1
 			  upimg_fun
 local bot_retorno="ID user botgen\n"
 		bot_retorno+="$LINE\n"
