@@ -71,7 +71,7 @@ bot_retorno+="$LINE\n"
 #<i>italic</i>, <em>italic</em>\n"
 bot_retorno+=" <pre>BORRAREMOS ESTE PRE ${message_message_id} </pre>\n"
 bot_retorno+=" <code>BORRAREMOS ESTE CODE ${MSG_id} </code>\n"
-msj_fun
+
 sleep 5s
 msj_del ${message_message_id}
 msj_del ${MSG_id}
