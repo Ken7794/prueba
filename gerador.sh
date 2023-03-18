@@ -280,7 +280,7 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/etc/http-shell"
 LIST="-SPVweN"
-wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/DanssBot/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log &>/dev/null
+wget -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/DanssBot/prueba/main/adm-lite/v-local.log &>/dev/null
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat <${SCPT_DIR}/v-local.log)
 txt[315]=" ${FlT} ChumoGH Keygen ${FlT} IS UPDATED!"
@@ -294,7 +294,7 @@ meu_ip() {
 
 mudar_instacao() {
     while [[ ${var[$value]} != 0 ]]; do
-        [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh C-SSR.sh Crear-Demo.sh ID PDirect.py PGet.py POpen.py PPriv.py PPub.py apacheon.sh blockBT.sh budp.sh chekuser.py chekuser.sh dns-netflix.sh dropbear.sh fai2ban.sh menu message.txt openvpn.sh paysnd.sh ports.sh python.py shadowsocks.sh slowdns.sh sockspy.sh speed.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes v2ray.sh wireguard.sh"
+        [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="PDirect.py PGet.py POpen.py PPriv.py PPub.py cabecalho fai2ban ferramentas ferramentascodes idioma_geral limiter.sh limitera limiterb menu menu_credito menu_inst optimizador payloads paysnd.sh ssl trans ultrahost user usercodes v-local.log verifica"
         clear
         echo -e $BARRA
         echo -e "MENU SSELECCI�N DE INSTALACI�N"
@@ -402,7 +402,7 @@ fix_key() {
     read -p " RESELLER deL Keys : " nomkey
     [[ $nomkey = 0 ]] && return
     [[ -z $nomkey ]] && {
-        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://raw.githubusercontent.com/DanssBot/Multi-Script/main/ChuGH-5.7u/adm-lite/menu_credito")"
+        [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://raw.githubusercontent.com/DanssBot/prueba/main/adm-lite/menu_credito")"
     }
     msg -bar
     echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
